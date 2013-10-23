@@ -1,0 +1,30 @@
+<footer class="site-footer" style="background-color:#095181;">
+  <div class="container">
+    {% block footer_content %}
+      <div class="row">
+        <div class="span6">
+          <ul class="unstyled">
+            <li><i class="icon-book"></i> <a href="http://eudat.eu"><strong>Learn more about EUDAT</strong></a></li>
+            <li><i class="icon-info-sign"></i> <a href="http://www.dkrz.de/about/kontakt/impressum"><strong>Legal notice</strong></a></li>
+            <li><i class="icon-envelope"></i> <a href="mailto:data@dkrz.de"><strong>Contact us</strong></a></li>
+          </ul>
+          <br /><small>This site is hosted at <a href="http://www.dkrz.de">DKRZ</a> and powered by <a href="http://ckan.org">CKAN 2.1</a></small>
+        </div>
+        <div class="span6">
+          <div align="center" style="background:#eeeeee;padding:5px">
+          <a href="http://europa.eu"><img alt="" src="/images/europe_0.png" style="position:relative; top:-5px" /></a>&nbsp;&nbsp;
+          <a href="http://cordis.europa.eu/fp7/home_en.html"><img alt="" src="/images/seventh.png" /></a>&nbsp;&nbsp;
+          <a href="http://cordis.europa.eu/fp7/cooperation/home_en.html"><img alt="" src="/images/cooperation.png" /></a>
+        </div>
+        <br /><small><center>The EUDAT project receives funding from the EU's Seventh Framework Programme (FP7/2007-2013) under grant agreement n° 283304. </small></center>
+        </div>
+      </div>
+    {% endblock %}
+  </div>
+
+  {% block footer_debug %}
+    {% if g.debug %}
+      {% include 'snippets/debug.html' %}
+    {% endif %}
+  {% endblock %}
+</footer>
